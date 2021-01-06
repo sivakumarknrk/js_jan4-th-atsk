@@ -1,0 +1,230 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample programm</title>
+</head>
+<body>
+    <script>
+       // Task1
+         document.write('<h1>Practice one</h1><br>');    
+        document.write(" <h2>To print all the even numbers from 1 to 100</h2><br>");
+        var i;
+        for(i=1;i<=100;i++)
+        {
+            
+            if((i%2)==0)
+            {
+                document.write(i +"      ");
+            }
+        }
+
+
+
+        //task2
+        document.write('<br><br><br>');
+        document.write('<h1> Second practice</h1><br>');
+        var num, temp,a,b;
+        document.write("<h2>To check given number is polindrom or not </h2><br>");
+        num=prompt('Enter Your checking number for polindrom number');
+        document.write(num+'<br>');
+        temp=0;
+        b=num;
+        while(num>0)
+        {
+            a=num%10;
+            num=parseInt(num/10);
+            temp=temp*10+a;
+
+        }
+        if(temp==b)
+        {
+            document.write('<h3>Given number is polindrom</h3>')
+        }
+        else
+        {
+            document.write('<h3>Given number is not a polindrom</h3>');
+        }
+
+
+
+
+       // Task3
+        document.write('<br><br><br>');
+        document.write('<h1> Third practice</h1><br>');
+        var j;
+        document.write("<h2>To check given number is even or odd </h2><br>");
+        j=prompt('Enter Your number to check even or odd');
+        document.write(j+'<br>')
+        if(j%2==0)
+        {
+            document.write('<h3>Given number is Even Number</h3>');
+        }
+        else{
+            document.write('<h3>Given number is odd Number</h3>');
+        }
+
+
+
+       // Task4
+        document.write('<br><br><br>');
+        document.write('<h1> Forth practice</h1><br>');
+        var k,h;
+        document.write("<h2>To print a pattern</h2><br>");
+        for(k=0;k<=5;k++)
+        {
+            for(h=0;h<k;h++)
+            {
+                document.write("*");
+            }
+            document.write('<br>');
+        }
+
+
+
+        //Task5
+        document.write('<br><br><br>');
+        document.write('<h1> Fiveth practice</h1><br>');
+        document.write("<h2>To print the fibonacci numbers</h2><br>");
+        var n=100,l=0,t1=0,t2=1,sum;
+        document.write('<h3>Upto 100 : </h3>');
+        while(t1<=n)
+        {
+            document.write("<h4>"+t1+"</h4>"+"     ");
+             sum=t1+t2;
+             t1=t2;
+             t2=sum;
+           
+            
+        }
+
+
+
+
+
+        //TASK6
+        document.write('<br><br><br>');
+        document.write('<h1> SIXTH practice</h1><br>');
+        document.write("<h2>To print the Array value</h2><br>");
+        var array=['apple','banana','mango','pineapple'];
+        document.write('length  :'+array.length +"<br>");
+        var fruit=prompt('Enter the array value you search');
+        document.write("<h3>"+fruit+"</h3>")
+        // document.write('Array elements are  :'+array[i] +"<br>");
+       for( var i=0;i<array.length;i++)
+       {
+        
+           if(fruit==array[i])
+           {
+               document.write('Your search is found');
+            if(fruit!=array[i])
+             {
+               document.write('Your search is not found');
+             }
+           }
+           
+          }
+            
+      
+       
+
+
+
+
+
+       // Task7
+            document.write('<br><br><br>');
+            document.write('<h1> Seventh practice</h1><br>');
+            document.write("<h2>To print year is leap year are not</h2><br>");
+            var year=prompt("Enter year to check leap year or not");
+            document.write('<h2> You entered year is  ::'+year+"</h2>")
+            if(year%4==0)
+            {
+                document.write("<h3>Given    "+year+" is leap year</h3>");
+            
+            }
+            else{
+                document.write("<h3>Given   "+year+" Not aleap year</h3>");
+            }
+            
+
+
+            //Task8
+              document.write('<br><br><br>');
+              document.write('<h1> Eight practice</h1><br>');
+              document.write("<h2>To convert temaparature into Celsius and Fahrenhit </h2><br>");
+
+                const celsius=prompt("Enter celsius value  :");
+                document.write('<h3>you enter celsius is    :'+celsius+"</h3><br>");
+                var fahrenheit=(celsius*1.8)+32;
+                document.write('<h3>Fahrenheit  Output value   ::'+fahrenheit+"</h3><br>");
+
+
+
+
+
+
+
+
+
+
+        //task9
+             document.write('<br><br><br>');
+             document.write('<h1> Ninth practice</h1><br>');
+             document.write("<h2>To check the number are true are there sum </h2><br>");
+            // var num1=prompt("Enter number1");
+             var num1=25;
+             document.write('Number one is   ::'+num1 +'<br>');
+             //var num2=prompt('Enter number2');
+             var num2=50;
+             document.write('Number two is   ::'+num2+'<br>');
+             
+             sum=(num1)+(num2);
+             var sum1=(num1)&&(num2);
+             document.write('sum of two number is   ::'+sum +'<br>' );
+             document.write('Any one of the number is  ::'+sum1+'<br>');
+             if(sum&&sum1==50)
+             {
+                 document.write('statement satisfied');
+             }
+             else{
+                document.write('statement un satisfied');
+             }
+             
+                    
+
+
+
+
+
+
+
+
+
+
+        //Task10
+            document.write('<br><br><br>');
+            document.write('<h1> tenth practice</h1><br>');
+            document.write("<h2>To check given integer with in 20 1nd 100</h2><br>");
+            var x=prompt("Enter an integer tocheck it is in between20 to 100");
+            document.write('<h2> Integer value    ::'+x+'</h2>')
+            if(x>=20 && x<=100)
+            {
+                document.write('<h4>Your integer   '+x+' is with in the range</h4>');
+            }
+            else{
+                document.write('<h4>Your integer   '+x+' is  not in your range</h4.');
+            }
+
+       
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html> 
